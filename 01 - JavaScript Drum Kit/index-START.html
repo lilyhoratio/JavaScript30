@@ -73,7 +73,7 @@
   // window.addEventListener("keyup" , removeYellow)
 
 function removeTransition(event) {
-  console.log(event);
+  this.classList.remove("playing") 
 }
 
   const keys = Array.from(document.querySelectorAll(".key"))
