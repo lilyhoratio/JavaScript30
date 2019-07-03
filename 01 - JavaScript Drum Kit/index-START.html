@@ -66,11 +66,11 @@
     audio.play() //calling .play() on audio element AS it is playing won't call it again
   }
 
-  // function removeYellow(event) {
-  //   const key = document.querySelector(`.key[data-key="${event.keyCode}"]`)
-  //   key.classList.remove("playing") 
-  // }
-  // window.addEventListener("keyup" , removeYellow)
+  function removeYellow(event) {
+    const key = document.querySelector(`.key[data-key="${event.keyCode}"]`)
+    key.classList.remove("playing") 
+  }
+  window.addEventListener("keyup" , removeYellow)
 
 function removeTransition(event) {
   console.log(event);
